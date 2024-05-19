@@ -13,7 +13,7 @@ public class LogDetailWithException : LogDetail
         string methodName,
         string user,
         List<LogParameter> parameters,
-        string exceptionMessage)
+        string exceptionMessage) : base(fullName, methodName, user, parameters)
     {
         ExceptionMessage = exceptionMessage;
     }
